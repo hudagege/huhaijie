@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div><span>点击增加票数，当前票数：</span>0</div>
+</body>
+</html>
+<script>
+    var div = document.querySelector("div");
+    function fn() {
+        var i = 0;
+        return function () {
+            div.innerHTML = "点击增加票数，当前票数：" +i++;
+            }
+        }
+    div.onclick = fn();
+</script>
